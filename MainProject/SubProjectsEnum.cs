@@ -2,8 +2,9 @@
 {
     public enum SubProjectsEnum
     {
-        CollectionTest = 0,
-        ClassStructTest = 1,
-        CollectionFindElementTest = 2,
+        CollectionTest,
+        ClassStructTest,
+        CollectionFindElementTest,
+        Pattern_Creational_Factory,
     }
 }

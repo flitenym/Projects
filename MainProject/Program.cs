@@ -6,7 +6,7 @@ namespace MainProject
     {
         static void Main(string[] args)
         {
-            DoWork(ProjectsEnum.SpeedTest, SubProjectsEnum.CollectionFindElementTest);
+            DoWork(ProjectsEnum.Pattern, SubProjectsEnum.Pattern_Creational_Factory);
         }
 
         public static void DoWork(ProjectsEnum project, SubProjectsEnum subProject)
@@ -41,6 +41,19 @@ namespace MainProject
                             case SubProjectsEnum.CollectionFindElementTest:
                                 {
                                     SpeedTest.CollectionFindElementTest.DoWork();
+                                    return;
+                                }
+                            default: break;
+                        }
+                        return;
+                    }
+                case ProjectsEnum.Pattern:
+                    {
+                        switch (subProject)
+                        {
+                            case SubProjectsEnum.Pattern_Creational_Factory:
+                                {
+                                    Console.Write(Patterns.Creational.Factory.Main.GetResultPattern());
                                     return;
                                 }
                             default: break;
